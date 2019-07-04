@@ -1,0 +1,6 @@
+package br.com.rightside.gerenciadorconsultas.controllers;
+
+@Controller
+public class HomeController {
+
+}
