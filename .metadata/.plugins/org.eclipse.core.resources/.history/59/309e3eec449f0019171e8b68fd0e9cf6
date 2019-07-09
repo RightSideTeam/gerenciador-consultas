@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Gerenciador de Consultas-Página inicial</title>
+</head>
+<body>
+<p> Olá, seja bem vindo ao Gerenciador de consultas</p>
+</body>
+</html>

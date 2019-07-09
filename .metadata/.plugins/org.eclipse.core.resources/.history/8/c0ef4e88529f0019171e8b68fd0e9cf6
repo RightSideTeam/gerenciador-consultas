@@ -1,0 +1,5 @@
+package br.com.rightside.gerenciadorconsultas.models;
+
+public class Consulta {
+
+}

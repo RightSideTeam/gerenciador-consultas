@@ -1,0 +1,63 @@
+package br.com.rightside.gerenciadorconsultas.models;
+
+import java.util.Date;
+
+public class Consulta {
+
+	private Long id;
+	private String nomePaciente;
+	private String nomeMedico;
+	private Date dataConsulta;
+	private Date horarioConsulta;
+	private Boolean consultaDeRevisao = false;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getNomePaciente() {
+		return nomePaciente;
+	}
+
+	public void setNomePaciente(String nomePaciente) {
+		this.nomePaciente = nomePaciente;
+	}
+	
+
+	public String getNomeMedico() {
+		return nomeMedico;
+	}
+
+	public void setNomeMedico(String nomeMedico) {
+		this.nomeMedico = nomeMedico;
+	}
+
+	public Date getDataConsulta() {
+		return dataConsulta;
+	}
+
+	public void setDataConsulta(Date dataConsulta) {
+		this.dataConsulta = dataConsulta;
+	}
+
+	public Date getHorarioConsulta() {
+		return horarioConsulta;
+	}
+
+	public void setHorarioConsulta(Date horarioConsulta) {
+		this.horarioConsulta = horarioConsulta;
+	}
+
+	public Boolean getConsultaDeRevisao() {
+		return consultaDeRevisao;
+	}
+
+	public void setConsultaDeRevisao(Boolean consultaDeRevisao) {
+		this.consultaDeRevisao = consultaDeRevisao;
+	}
+
+}

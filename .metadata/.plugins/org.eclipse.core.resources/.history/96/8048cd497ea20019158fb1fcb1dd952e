@@ -1,0 +1,10 @@
+#Thymeleaf
+spring.thymeleaf.mode=HTML
+spring.thymeleaf.cache=false
+
+# Spring Data
+
+spring.datasource.url=jdbc:mysql://localhost:3386/gerenciador_consultas
+spring.datasource.username=root
+spring.datasource.password=3$t@g!0
+spring.jpa.hibernate.ddl_auto=update

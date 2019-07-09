@@ -1,0 +1,28 @@
+package br.com.rightside.gerenciadorconsultas.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import br.com.rightside.gerenciadorconsultas.repositorios.RepositorioConsulta;
+
+@Controller
+@RequestMapping("/consultas")
+public class ConsultasController{
+	
+	@Autowired
+	private RepositorioConsulta repositorioConsulta;
+	
+	@GetMapping("/listar")
+	public ModelAndView listar() {
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("consultas/listar");
+		modelAndView.addObject("consultas",repositorioConsulta.findAll());
+		return modelAndView;
+		
+		
+	}
+
+}
